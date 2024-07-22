@@ -1,8 +1,46 @@
-.top{
-    background-color: aqua;
-    width: 100px;
-    height: 90px;
+html, body { margin: 0; padding: 0; }
+body{
+    overflow: hidden;
 }
 html{
-    background-color: black;
+    bottom: 0;
+    background-image: url("back.jpg");
+    background-repeat: no-repeat;
+}
+.side{
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: #002037;
+    width: 16%;
+    height: 100%;
+}
+.top{
+    margin: 0;
+    padding: 0;
+    right: 0;
+    position: absolute;
+    left: 16%;
+    width: 87%;
+    height: 21%;
+    background-color: blue;
+}
+.side_but{
+    margin: 0; 
+    padding: 0;
+
+    top:0;
+
+    height: 10%;
+    width:100%;
+
+
+    position:absolute;
+
+    background-color: #002037;
+    background-image: url("profile.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    border: none;
 }
