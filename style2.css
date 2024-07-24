@@ -5,7 +5,7 @@ body{
     font-size: 20px;
     min-width: 320px;
     overflow-x: hidden;
-    overflow-x: hidden;
+    overflow-y: hidden;
 
     height: auto;
     padding: 0;
