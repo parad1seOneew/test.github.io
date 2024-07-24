@@ -6,14 +6,10 @@ var levelNum = 0;
 levels = [0,100,1000,10000,100000,1000000,10000000];
 plus = 1;
 
-if (localStorage.length!=0){
-    score = Number(localStorage.getItem('score'));
-    levelNum = Number(localStorage.getItem('level'));
-}
-else{
-    localStorage.setItem('score', '0');
-    localStorage.setItem('level', '0');
-};  
+
+localStorage.setItem('score', '0');
+localStorage.setItem('level', '0');
+ 
 scoreText = document.querySelector(".now-score");
 scoreText.textContent = String(score);
 levelNum = Number(localStorage.getItem('level'));
