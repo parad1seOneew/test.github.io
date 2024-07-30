@@ -24,13 +24,14 @@ lvltxt = document.querySelector(".lvl-txt");
 lvltxt.textContent = String(levelNum+1)+ "/" +String(levels.length-1);
 
 
+
 level = document.querySelector(".progress-bar-point");
 level.style.width = String(((score/levels[levelNum+1])*100))+"%";  
 
 reset = document.querySelector('.reset-but');
 reset.onclick = resetProgress;
-
-
+reset.textContent = String(window.Telegram.WebApp.id);
+console.log(window.Telegram.WebApp.id);
 function resetProgress(){
     localStorage.setItem('score', '0');
     localStorage.setItem('level', '0');
