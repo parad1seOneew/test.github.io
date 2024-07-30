@@ -30,8 +30,12 @@ level.style.width = String(((score/levels[levelNum+1])*100))+"%";
 
 reset = document.querySelector('.reset-but');
 reset.onclick = resetProgress;
-reset.textContent = String(window.Telegram.WebApp.id);
-console.log(window.Telegram.WebApp.id);
+reset.textContent = String(window.Telegram.WebApp.WebAppUser.id);
+
+console.log(window.Telegram.WebApp.WebAppUser.id);
+console.log(window.Telegram.WebApp);
+
+
 function resetProgress(){
     localStorage.setItem('score', '0');
     localStorage.setItem('level', '0');
